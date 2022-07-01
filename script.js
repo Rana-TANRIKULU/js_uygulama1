@@ -73,7 +73,8 @@
 let val;
 const a=10;
 const b=5;
-let c=3;
+const  c=5;
+let d=3;
 
 // 1- Aritmetik Oparetörler
 
@@ -82,19 +83,52 @@ val = a-b;
 val = a*b;
 val = a/b;
 val = a%b;
-val = c++
-val = ++c
-val = --c
-val = c--
+val = d++
+val = ++d
+val = --d
+val = d--
     
 // 2- Atama Oparetörleri
 
 val = a;
-val +=a;
+val +=a; // val = val + a;
+val -=a; // val = val - a;
+val  *=a; // val = val * a;
+val  /=a; //val = val / a;
+val  %=a; // val =val % a;
+
 
 // 3- Karşılaştırma Oparetörleri
 
+val = a==b;
+val = b==c;
+val = c===b; // değer kontrolü & type
+val= 5=== '5';
+val =  a!=b;
+val = a!==b;
+val = a > b;
+val = b<a;
+val = a >= b; 
+val = 5 >= 5;
+val = a <= b;
 // 4-Mantıksal Oparetörler
+// && (and)
+//true && true =>true
+//true && false =>false
+// false && false => false
+  val= (a>b) && (a>c)
+  val = (a<b) || (a<c)
+  val = !(a>b)
+
+
+// || (or)
+//true && true =>true
+//true && false =>true
+// false && false => false
+// ! (not)
+
+//!true =>false
+//!false =>true
 
 console.log(val);
-console.log(typeof val);
+console.log(typeof val);  
